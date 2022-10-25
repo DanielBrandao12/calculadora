@@ -2,14 +2,67 @@
 const visor = document.querySelector('.visor')
 const buttons = document.querySelectorAll('.button')
 
-let numeros = []
+let numeros 
+let operacao
+let tela
 
 buttons.forEach(buttonsId => {
     buttonsId.addEventListener('click', e => {
         let valorClicado = buttonsId.innerText
             console.log(valorClicado)
-            numeros.push(valorClicado)
-            visor.innerText = numeros
+       
+            
+            if(!isNaN(valorClicado)){
+                visor.innerText += valorClicado
+            }else if(valorClicado =='.') {
+                visor.innerText += valorClicado
+            }
+            console.log(parseFloat(visor.innerText))
+            if(valorClicado =='+'){
+                numeros= visor.innerText
+                operacao = '+'
+                visor.innerText =''
+               // console.log(numeros)
+            }
+            if(valorClicado =='-'){
+                numeros= visor.innerText
+                operacao = '-'
+                visor.innerText =''
+               // console.log(numeros)
+            }
+            if(valorClicado =='*'){
+                numeros= visor.innerText
+                operacao = '*'
+                visor.innerText =''
+               // console.log(numeros)
+            }
+            if(valorClicado =='/'){
+                numeros= visor.innerText
+                operacao = '/'
+                visor.innerText =''
+               // console.log(numeros)
+            }
+
+            if(valorClicado =='='){
+               if(operacao =='+'){
+                  
+                return   console.log(visor.innerText= parseFloat(numeros)+parseFloat(visor.innerText))
+
+               }else if(operacao =='-'){
+                  
+                return   console.log(visor.innerText= parseFloat(numeros)-parseFloat(visor.innerText))
+
+               }else if(operacao =='*'){
+                  
+                return   console.log(visor.innerText= parseFloat(numeros)*parseFloat(visor.innerText))
+
+               }else if(operacao =='/'){
+                  
+                return   console.log(visor.innerText= parseFloat(numeros)/parseFloat(visor.innerText))
+
+               }
+               
+            }
     })
 })
 

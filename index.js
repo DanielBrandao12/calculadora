@@ -9,14 +9,22 @@ let tela
 buttons.forEach(buttonsId => {
     buttonsId.addEventListener('click', e => {
         let valorClicado = buttonsId.innerText
-            console.log(valorClicado)
+
+
+           console.log(visor.innerText)
        
-            
+         
             if(!isNaN(valorClicado)){
+                if(visor.innerText == 0){
+                    visor.innerText = ''
+                }
                 visor.innerText += valorClicado
             }else if(valorClicado =='.') {
-                visor.innerText += valorClicado
+         
+                    visor.innerText += valorClicado
+                
             }
+
             console.log(parseFloat(visor.innerText))
             if(valorClicado =='+'){
                 numeros= visor.innerText
@@ -42,7 +50,7 @@ buttons.forEach(buttonsId => {
                 visor.innerText =''
                // console.log(numeros)
             }
-
+        
             if(valorClicado =='='){
                if(operacao =='+'){
                   

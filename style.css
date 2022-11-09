@@ -1,84 +1,91 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
-h1{
+
+h1 {
     font-size: 26px;
     color: white;
     margin-top: 10px;
 }
 
-.container{
-    width: auto;
+.container {
+    width: 299px;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    background-color: #000000;
-    border-radius: 10px;
-
+    border: 3px solid #383838;
+    background-color: #222222;
 }
 
-.visor{
-    width: 271px;
-    height: 70px;
+.visor {
+    width: 299px;
+    height: 80px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-   
+
     color: white;
     font-size: 50px;
-    border: 1px solid #000000;
-    background-color: #978b8b;
-    margin-top: 10px;
-    border-radius: 10px;
-   
+    border: 2px solid #383838;
+    background-color: #222222;
+  
 }
 
-.container-buttons{
-   
-    height: auto;
-
+.container-buttons {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     cursor: pointer;
 }
 
-.container-buttons .button{
-    width: 51px;
-    height: 51px;
+.container-buttons div {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+
+    font-size: 25px;
+
+}
+
+.container-buttons .button {
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    font-size: 50px;
+    color: #ffffff;
     margin: 10px;
-    border: 1px solid #000000;
     cursor: pointer;
-    background-color: white;
 
+    background-color: #383838;
 }
+
 .container-igual {
     display: flex;
 }
+
+#division, #multiplication, #subtraction,#addition{
+    color: rgb(23, 87, 184);
+}
 .container-igual .button-igual {
-    width: 271px;
+    width: 299px;
     height: 51px;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    font-size: 50px;
-    border: 1px solid #000000;
-    background-color: white;
-    margin-bottom: 10px;
+    color: #ffffff;
+    background-color: #383838;
+    margin-bottom: 1px;
 }

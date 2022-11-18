@@ -36,6 +36,6 @@ Mencione as ferramentas que você usou para criar seu projeto
 * JavaScript, HTML e CSS
 * [Visual Code](https://code.visualstudio.com/download) - IDE usada
 
-
+## Imagem do projeto!
 ![image](https://user-images.githubusercontent.com/46601091/202693152-5b344930-818a-4f10-8767-dae7e1940f4b.png)
 
